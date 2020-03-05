@@ -28,12 +28,10 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ```
 class Solution:
     def isPalindrome(self, x):
-        str_x = str(x)
-        reverse_x = str(abs(x))[::-1]
-        if str_x == reverse_x:
-            return True
-        else:
+        if x < 0 or x != int(str(abs(x))[::-1]):
             return False
+        else:
+            return True
         
 print(Solution().isPalindrome(121))
 print(Solution().isPalindrome(-121))
