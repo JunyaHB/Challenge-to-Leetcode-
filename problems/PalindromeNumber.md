@@ -29,11 +29,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 class Solution:
     def isPalindrome(self, x):
         str_x = str(x)
-        reverse_x = ""
-        i = len(str_x) - 1
-        while i >= 0:
-            reverse_x += str_x[i]
-            i -= 1
+        reverse_x = str(abs(x))[::-1]
         if str_x == reverse_x:
             return True
         else:
