@@ -55,3 +55,4 @@ class Solution:
                 n = i
         return n == 0
 ```
+参照：https://www.tutorialspoint.com/jump-game-in-python
